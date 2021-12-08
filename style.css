@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(44,62,80);
+    padding: 30px 0px;
+}
+.container{
+    margin: 0 auto;
+    width: 1160px;
+    padding: 0 20px;
+}
+.form{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px ;
+}
+.form__add-user{
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 28px;
+}
+.form__name-input,.form__number-input{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 0 10px;
+}
+.form__send-button{
+    margin-top: 30px;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(157, 206, 255);
+    transition: all 0.5s;
+}
+.form__send-button:hover{
+    cursor: pointer;
+    background-color: rgb(135, 194, 253);
+}
+.users{
+    margin: 0 auto;
+    width: 800px;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 30px ;
+}
+.users__list{
+    list-style: none;
+}
+.users__list-item{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.users__list-item+.users__list-item{
+    margin-top: 15px;
+}
+
+.users__name-view,.users__number-view{
+    width: 150px;
+    height: 30px;
+}
+.users__name-edit,.users__number-edit{
+    font-size: 20px;
+    width: 200px;
+    padding: 0 5px;
+}
+.users__name-edit--error,.users__number-edit--error{
+    border-color: rgb(255, 140, 140);
+    
+}
+.users__button-edit,.users__button-save{
+    padding: 5px 15px;
+    border-radius: 5px;
+    width: 60px;
+    background-color: rgb(101, 236, 101);
+    transition: all 0.2s;
+}
+.users__button-delete,.users__button-clear{
+    margin-left: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    width: 75px;
+    background-color: rgb(255, 143, 143);
+    transition: all 0.2s;
+}
+.users__button-edit:hover,.users__button-save:hover{
+    background-color: rgb(75, 231, 75);
+    cursor: pointer;
+}
+.users__button-delete:hover,.users__button-clear:hover{
+    background-color: rgb(255, 115, 115);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 700px) {
+    .container{
+        width: 420px;
+        padding: 0 10px;
+    }
+    .form{
+        width: 400px;
+    }
+    .users{
+        width: 400px;
+    }
+    
+    .users__buttons-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .users__button-edit,.users__button-save{
+        width: 75px;
+    }
+    .users__button-delete,.users__button-clear{
+        margin-left: 0;
+    }
+    .users__name-view{
+        width: 70px;
+        font-size: 17px;
+    }
+    .users__number-view{
+        width: 150px;
+        font-size: 17px;
+    }
+    .users__name-edit,.users__number-edit{
+        width: 100px;
+        font-size: 17px;
+    }
+    .users__number-edit{
+        width: 130px;
+
+        
+    }
+}
+@media (max-width: 450px){
+    .container{
+        width: 320px;
+        padding: 0 10px;
+    }
+    .form{
+        width: 300px;
+        padding: 30px 20px;
+    }
+    .form__add-user{
+        font-size: 26px;
+    }
+    .form__name-input,.form__number-input{
+        width: 260px;
+    }
+    .users{
+        width: 300px;
+    }
+    .users__list-item{
+        flex-wrap: wrap;
+        /* height: 1000px; */
+    }
+    .users__list-item+.users__list-item{
+        margin-top: 30px;
+    }
+    .users__number-view{
+        text-align: right;
+    }
+    .users__buttons-wrapper{
+        flex-direction: row;
+        width: 240px;
+        justify-content: space-between;
+    }
+    .users__name-edit,.users__number-edit{
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+}
