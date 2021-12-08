@@ -6,7 +6,7 @@ let users = {
     5: { name: "Kate", number: "+380980842126" },
 }
 
-let editList = [3, 4]
+let editList = []
 let inputErrors={}
 function renderList() {
     if(Object.keys(users).length<1){
